@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "simple-todo": {
+    "stopwatch": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/simple-todo",
+            "outputPath": "dist/stopwatch",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "simple-todo:build:production"
+              "buildTarget": "stopwatch:build:production"
             },
             "development": {
-              "buildTarget": "simple-todo:build:development"
+              "buildTarget": "stopwatch:build:development"
             }
           },
           "defaultConfiguration": "development"
